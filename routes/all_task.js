@@ -3,12 +3,14 @@ const gets = require('../lib/getAmoCrm')
 
 const router = Router()
 
+
 router.get('/', (req, res, next) => {
-    gets()
+    let mass_tasks = gets()
     res
-        .render('index', {
-        title: 'Главная страница',
-        isHome: true,
+        .render('all_task', {
+        title: 'Все задачи в amoCRM',
+        isAllTask: true,
+        mass_tasks
     })
 })
 

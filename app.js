@@ -6,6 +6,8 @@ const exphbs  = require('express-handlebars');
 const path = require('path');
 
 const homeRoutes = require('./routes/home');
+const taskRoutes = require('./routes/task');
+const allTaskRoutes = require('./routes/all_task');
 
 const app = express();
 
@@ -32,6 +34,8 @@ app.use(limiter);
 app.use(compression());
 
 app.use('/', homeRoutes)
+app.use('/task', taskRoutes)
+app.use('/all_task', allTaskRoutes)
 
 app.use('*', (req, res) => {
   res.status(404).send('The resource can not be found');

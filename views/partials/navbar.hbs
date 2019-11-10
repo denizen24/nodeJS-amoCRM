@@ -1,0 +1,24 @@
+ <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">amoCRM</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+          <li class="active"><a href="/">Home</a></li>
+        {{else}}
+          <li><a href="/">Home</a></li>
+        {{/if}}
+
+        {{#if isTask}}
+          <li class="active"><a href="/task">Добавить задачу</a></li>
+        {{else}}
+          <li><a href="/task">Добавить задачу</a></li>
+        {{/if}}
+
+        {{#if isAllTask}}
+          <li class="active"><a href="/task">Все задачи</a></li>
+        {{else}}
+          <li><a href="/task">Все задачи</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
