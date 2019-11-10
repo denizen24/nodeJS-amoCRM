@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-amocrm",
+  "version": "1.0.0",
+  "description": "Необходимо реализовать авторизацию и работу с задачами - получение/добавление.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizen24/nodeJS-amoCRM.git"
+  },
+  "author": "Denizen24.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denizen24/nodeJS-amoCRM/issues"
+  },
+  "homepage": "https://github.com/denizen24/nodeJS-amoCRM#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-rate-limit": "^5.0.0",
+    "helmet": "^3.21.2"
+  }
+}
