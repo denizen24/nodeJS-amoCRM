@@ -37,8 +37,8 @@ app.use('/', homeRoutes)
 app.use('/task', taskRoutes)
 app.use('/all_task', allTaskRoutes)
 
-// app.use('*', (req, res) => {
-//   res.status(404).send('The resource can not be found');
-// });
+app.use('*', (req, res) => {
+  res.status(404).send('The resource can not be found');
+});
 
 module.exports = app;
